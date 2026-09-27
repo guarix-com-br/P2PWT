@@ -1,0 +1,11 @@
+{
+  "name": "p2pt-modern",
+  "version": "0.1.0",
+  "description": "Small browser-first WebRTC mesh using WebTorrent trackers for signaling.",
+  "type": "module",
+  "exports": { ".": { "types": "./dist/index.d.ts", "import": "./dist/index.js" } },
+  "files": ["dist", "README.md", "ARCHITECTURE.md", "DESIGN.md"],
+  "scripts": { "build": "node scripts/build.mjs", "test": "node --test", "check": "node --check src/index.js && node --check src/P2PT.js" },
+  "keywords": ["webrtc", "p2p", "webtorrent", "tracker", "files"],
+  "license": "MIT"
+}
