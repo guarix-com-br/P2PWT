@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>P2PT Modern demo</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main>
+      <h1>P2PT Modern</h1>
+      <p>Tracker para sinalização; dados vão diretamente por WebRTC.</p>
+      <section>
+        <input id="room" value="p2pt-demo" aria-label="Room">
+        <button id="join">Conectar</button>
+        <output id="status">Carregando biblioteca…</output>
+      </section>
+      <section><h2>Peers</h2><ul id="peers"></ul></section>
+      <section>
+        <h2>Mensagem</h2>
+        <input id="message" placeholder="Olá, mesh">
+        <button id="send">Broadcast</button>
+        <pre id="log"></pre>
+      </section>
+      <section>
+        <h2>Arquivo</h2>
+        <input id="file" type="file">
+        <button id="send-file">Enviar para todos</button>
+        <progress id="progress" max="1" value="0"></progress>
+      </section>
+      <section><h2>Câmera</h2><button id="camera">Compartilhar câmera</button><div id="videos"></div></section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
