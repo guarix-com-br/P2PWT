@@ -77,4 +77,4 @@ Opções: `trackers`, `peerId`, `rtcConfig`, `announceInterval`, `transfer.chunk
 
 Chrome, Edge, Firefox e Safari atuais com WebRTC, WebSocket, Web Crypto e `File` são o alvo. Limite room, mensagem, arquivo, transfers simultâneos e chunks antes de usar em ambientes hostis. Não exponha conteúdo sensível pela room, não confie no ID do peer, implemente autorização/criptografia de aplicação se necessário e lembre que trackers públicos podem estar indisponíveis. O envio de arquivo é eficiente em leitura; a reconstrução do destinatário ainda ocupa memória proporcional ao arquivo.
 
-Veja [ARCHITECTURE.md](ARCHITECTURE.md) para análise do original e [DESIGN.md](DESIGN.md) para decisões/limitações. `demo/` é uma página estática de demonstração.
+Veja [ARCHITECTURE.md](ARCHITECTURE.md) para análise do original e [DESIGN.md](DESIGN.md) para decisões/limitações. `demo/` é uma página estática de demonstração cujo `app.js` é um script clássico; ele usa `import()` apenas para carregar a biblioteca ESM de forma assíncrona.
